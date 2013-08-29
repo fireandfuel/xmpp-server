@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.osgi_3.8.0.v20120529-1548.jar"/>
+	<classpathentry kind="lib" path="lib/database/mysql-connector-java-5.1.20-bin.jar"/>
+	<classpathentry kind="lib" path="lib/database/postgresql-9.1-902.jdbc4.jar"/>
+	<classpathentry kind="lib" path="lib/database/sqlitejdbc-v056.jar"/>
+	<classpathentry kind="lib" path="lib/bcprov-jdk15on-148.jar"/>
+	<classpathentry kind="lib" path="lib/database/mariadb-java-client-1.1.2.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
