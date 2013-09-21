@@ -260,7 +260,7 @@ public class SASLAuthenfication
 			System.out.println("(S) Authenfication accepted");
 			stream.getJID().setUserName(userName);
 			stream.getJID().setContacts(db.getUser(userName).getJIDs());
-			stream.getJID().setGroup(db.getGroup(userName));
+			stream.getJID().setGroup(db.getGroupOfUser(userName));
 			state = 6;
 		} catch (IOException e)
 		{

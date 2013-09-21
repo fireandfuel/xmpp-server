@@ -2,6 +2,7 @@ package de.cuina.server.xmpp.database;
 
 import java.util.HashMap;
 
+import de.cuina.server.xmpp.data.Group;
 import de.cuina.server.xmpp.data.JID;
 import de.cuina.server.xmpp.data.Property;
 
@@ -56,9 +57,16 @@ public class TemporaryDatabase implements IDatabaseProvider
 	}
 	
 	@Override
-	public String getGroup(String userName)
+	public Group getGroupOfUser(String userName)
 	{
-		return users.get(userName).getGroup();
+		return new Group();
+//				users.get(userName).getGroup();
+	}
+	
+	public Group getGroupByName(String userName)
+	{
+		return new Group();
+//				users.get(userName).getGroup();
 	}
 	
 	@Override
@@ -84,6 +92,41 @@ public class TemporaryDatabase implements IDatabaseProvider
 	public void setPassword(String userName, String password)
 	{
 
+	}
+
+	@Override
+	public void addGroup(String group)
+	{
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void updateGroup(Group group)
+	{
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void deleteGroup(String group)
+	{
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Group[] getGroups()
+	{
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String[] getUsersOfGroup(String groupName)
+	{
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

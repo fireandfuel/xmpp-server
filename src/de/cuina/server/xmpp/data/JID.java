@@ -3,9 +3,11 @@ package de.cuina.server.xmpp.data;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+import de.cuina.server.xmpp.core.XMPPServer;
+
 public class JID
 {
-	private String userName, password, nickName, server, resource, group;
+	private String userName, password, nickName, server, resource;
 	private String vCard;
 	
 	private ArrayList<JID> contacts = new ArrayList<JID>();
@@ -190,14 +192,14 @@ public class JID
 		return this.getJIDString().equalsIgnoreCase(other);
 	}
 
-	public String getGroup()
+	public Group getGroup()
 	{
-		return group;
+		return XMPPServer.getDatabase().getGroupOfUser(userName);
 	}
 
-	public void setGroup(String group)
+	public void setGroup(Group group)
 	{
-		this.group = group;
+		XMPPServer.getDatabase().setGroup(userName, group.getName());
 	}
 
 	public String getVCard()
