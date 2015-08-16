@@ -1,3 +1,5 @@
+NOTE: This project is at its end of life, I (fireandfuel, the author) will not improve or support it in any kind.
+
 xmpp-server
 ===========
 
@@ -8,3 +10,4 @@ How to setup:
 - setup server.ini
 
 License: GPLv3
+
